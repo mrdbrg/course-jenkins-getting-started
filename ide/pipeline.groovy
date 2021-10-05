@@ -3,11 +3,11 @@ pipeline {
     
     // by Marlon Braga
     stages {
-         stage('Checkout') {
+        stage('Checkout') {
             steps {
                 git url: 'https://github.com/mrdbrg/jgsu-spring-petclinic', branch: 'main'
             }
-         }
+        }
         
         stage('Build') {
             steps {
